@@ -35,21 +35,25 @@ html, body {
   border: none;
 }
 .main-content-wrapper {
+  width: 100%;
   display: flex;
+  /* flex-wrap: wrap; */
+ 
   flex: 1;
   height: 100%;
   min-height: 0; /* ✅ allows children to grow or scroll */
   /* overflow: hidden; */
  overflow-y: auto;
- background-color: aquamarine;
+ /* background-color: aquamarine; */
 }
 
 .right-follow {
-  width: 30%;
-  height: 1130vh;
-  background-color: antiquewhite;
+  width: 50%;
+  height: 1220vh;
+  /* background-color: antiquewhite; */
   display: flex;
   overflow: hidden;
+  position: relative;
   flex-direction: column;
   /* justify-content: flex-start; */
   /* align-items: center; */
@@ -59,11 +63,12 @@ html, body {
 .middle-social {
   width: 60%;
    flex: 1;
-   height : 1130vh;
+  height : 1220vh;
   min-height: 0;
+  position: relative;
   padding: 20px;
   /* overflow-y: auto; */
-  background-color: #f1f6fa;
+  /* background-color: #f1f6fa; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -516,4 +521,31 @@ footer{
     border-radius: 50%;
     /* margin-right: 20px; */
   }
+}
+.arbaj{
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.arbaj h1{
+    font-size: 18px;
+    font-weight: 300;
+    color: #474646;
+    
+}
+.arbaj strong{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff0000;
+}
+.arbaj a{
+    list-style: none;   
+    text-decoration: none;
 }
