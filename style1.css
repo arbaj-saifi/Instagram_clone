@@ -420,11 +420,51 @@ footer{
     .Create-item h1{
         font-size: 15px;
     }
-    .tabs{
-        width: 100%;
-        height: auto;
-        
-    }
+   .tabs {
+        /* display: flex; */
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .tabs input[type="radio"] {
+        display: none;
+      }
+
+      .tab-label {
+        padding: 10px 16px;
+        background: #eee;
+        cursor: pointer;
+        /* border: 1px solid #ccc; */
+        border-radius: 4px;
+        transition: background 0.3s;
+        font-size: 16px;
+      }
+
+      .tabs input[type="radio"]:checked + .tab-label {
+        background: #333;
+        color: white;
+      }
+
+      .tab-content {
+        display: none;
+        /* border: 1px solid #ccc; */
+        padding: 15px;
+        margin-top: 10px;
+        /* background-color: #fafafa; */
+      }
+
+      #tab-all:checked ~ .content-video #post,
+      #tab-all:checked ~ .content-video #reels {
+        display: block;
+      }
+
+      #tab-post:checked ~ .content-video #post {
+        display: block;
+      }
+
+      #tab-reels:checked ~ .content-video #reels {
+        display: block;
+      }
     .tab-label{
         width: auto;
         /* display: flex;
@@ -443,9 +483,7 @@ footer{
     .tab-content{
         width: 100%;
         height: auto;
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: row;
+       
     }
     .tab-content img{
         width: 120px;
