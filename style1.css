@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.nav-left{
+    width: 17%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* background-color: #e4dfdf; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    overflow: hidden;
+
+}
+.home h1 a{
+    text-decoration: none;
+    color: #333232;
+}
+.home svg {
+  width: 23px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.nav-left-Home {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-left img {
+  width: 150px;
+  height: 80px;
+}
+
+.home {
+  height: 50px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home:hover {
+  cursor: pointer;
+  background-color: #e4dfdf;
+  border-radius: 10px;
+}
+
+.home h1 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333232;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home img {
+  width: 28px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container-wrap{
+    width: 80%;
+    border-left: 1px solid #ccc;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding:10px;
+    flex-direction: column;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+.profile{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    /* background-color: antiquewhite; */
+}
+.profile-image img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 20px;
+    
+    
+}
+.profile-content{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.first{
+    width: 100%;
+    padding: 10px;
+    /* height: 100%; */
+    height: auto;
+    gap: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+    align-items: center;
+}
+.first svg{
+    width: 25px;
+    height: 26px;
+    cursor: pointer;
+}
+.first h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333232;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: #ddd7d7;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #cac8c8;
+}
+.second{
+    width: 100%;
+    padding: 10px;
+    /* height: 100%; */
+    height: auto;
+    gap: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+    align-items: center;
+}
+.second h1{
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #333232;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.third{
+    width: 100%;
+    padding: 10px;
+    /* height: 100%; */
+    height: auto;
+    gap: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+    align-items: center;
+}
+.third h1{
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #333232;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.third a{
+    text-decoration: none;
+    /* text-align: center/; */
+    color: #333232;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #333232;
+}
+.Create{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    text-align: center;
+    justify-content:center;
+    margin: 0 auto;
+}
+.Create-item{
+    width: 150px;
+    height: auto;
+}
+
+.Create svg{
+    width: 90px;
+    /* padding: 10px; */
+    height: 90px;
+    cursor: pointer;
+    fill: #8d8a8a;
+    background-color: #dad4d4;
+    border-radius: 50%;
+}
+.Create h1{
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #333232;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container-videos{
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #ccc;
+    display: flex;
+    /* flex-direction: column; */
+    /* background-color: #cac8c8; */
+}
+.tabs input[type="radio"] {
+      display: none;
+}
+.tabs {
+    width: 100%;
+    /* background-color: #333; */
+}
+
+/* .container-tabs{
+    width: 100%;
+    height: 10;
+    background-color: #cac8c8;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    
+} */
+.tab-label {
+    margin-left: 150px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #eee;
+      margin-right: 100px;
+      margin-top: 10px;
+      cursor: pointer;
+      /* border: 1px solid #ccc; */
+}
+
+.tabs input[type="radio"]:checked + .tab-label {
+      background: #333;
+      color: white;
+}
+
+.tab-content {
+      display: none;
+      /* border: 1px solid #ccc; */
+      padding: 10px;
+      margin-top: 10px;
+      /* display: flex; */
+}
+.content-video img{
+    width: 300px;
+    height: 400px;
+}
+
+#tab-all:checked ~ .content-video #post,
+#tab-all:checked ~ .content-video #reels {
+      display: block;
+}
+
+#tab-post:checked ~ .content-video #post {
+      display: block;
+}
+
+#tab-reels:checked ~ .content-video #reels {
+      display: block;
+}
+.reel-videos{
+
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  /* background-color: #b1/0707; */
+  display: flex;
+}
+
+.reel video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+}
+.reel{
+  background: #000;
+    width: 330px;
+    height: 80vh;
+    gap: 20px;
+    display: flex;
+      /* background-color: aliceblue; */
+      /* margin-bottom: 40px; */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+}
+.content-reel{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    /* flex-wrap: ; */
+}
